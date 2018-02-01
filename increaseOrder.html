@@ -30,6 +30,24 @@ for(var i = 0; i < 7; i++){
 }
 console.log(number);
 
+console.log("Put previous array in descending order");
+
+for(var i = 0; i < 7; i++){
+
+  for(var t = 0; t < 7; t++){
+
+    if(number[t] < number[t+1]){
+      var ip = number[t];
+      var tip = number[t+1];
+      number[t+1] = number[t];
+      number[t] = tip;
+
+
+    }
+}
+}
+console.log(number);
+
 
 </script>
 </body>
